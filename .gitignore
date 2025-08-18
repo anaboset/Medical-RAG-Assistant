@@ -4,6 +4,7 @@ __pycache__/
 *.pkl
 *.pickle
 faiss_store*/
+chunks_faiss_store/
 venv/
 .env
 
