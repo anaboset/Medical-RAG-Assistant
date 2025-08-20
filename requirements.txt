@@ -20,7 +20,6 @@ tokenizers==0.13.3
 langchain-groq==0.1.6
 
 # Utilities
-tiktoken==0.7.0
 numpy==1.26.4
 pandas==2.2.2
 scikit-learn==1.5.1
