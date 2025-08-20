@@ -1,17 +1,61 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pkl
-*.pickle
-faiss_store*/
-chunks_faiss_store/
+*$py.class
+
+# Virtual environments
 venv/
-.env
+env/
+.venv/
 
 # Streamlit
+*.streamlit/
 .streamlit/
 
-# OS and editor files
-.DS_Store
+# Logs
+*.log
+logs/
+
+# IDE and editor files
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+*.egg
+
+# API keys and sensitive data
+*.key
+*.env
+!.env.example  # Allow env example file if present
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# macOS
+*.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Data files (exclude user-generated temp files, include preprocessed data)
+data/  # Exclude data directory unless specified
+!chunks.pkl
+!faiss_store/
+!bm25.pkl
+!data/efda_guideline*.pdf  # Include specific default PDFs if used
