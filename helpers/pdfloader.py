@@ -17,7 +17,7 @@ def load_pdfs(folder_path: str, category: str) -> List[Document]:
 
     # Iterate over all files in the specified folder
     for file in os.listdir(folder_path):
-        if not file.lower().endswith(".pdf"):   # Check if the file is a PDF (case-insensitive)
+        if not file.lower().endswith(".pdf"):   # Skep non-PDF files (case-insensitive)
             continue
         pdf_path = os.path.join(folder_path, file)
         try:
@@ -31,7 +31,10 @@ def load_pdfs(folder_path: str, category: str) -> List[Document]:
                     "doc_title": file.replace("_", " ").replace(".pdf", ""),
                     "page": doc.metadata.get("page")  # Preserve the original page number
                 })
+
+            # Extend the main docs list with processed pages    
             docs.extend(pdf_docs)
         except Exception as e:
+            # Handle any errors that occur during PDF loading
             print(f"Error loading {pdf_path}: {e}")
     return docs

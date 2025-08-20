@@ -31,4 +31,4 @@ def chunk_documents(docs: List[Document], chunk_size: int = 1000, chunk_overlap:
                 page_content=text,
                 metadata=doc.metadata  # Preserve category, doc_title, page
             ))
-    return chunks
+    return chunks 
