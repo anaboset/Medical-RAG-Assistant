@@ -51,11 +51,13 @@ python3 -m venv venv
 
 ### Activate it
  On macOS/Linux:
+```
 source venv/bin/activate
-
+```
  On Windows:
+```
 venv\Scripts\activate
-
+```
 ### 3. Install Dependencies
 The project’s dependencies are listed in `requirements.txt`.
 ```bash
