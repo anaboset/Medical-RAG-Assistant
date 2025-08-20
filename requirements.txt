@@ -3,7 +3,8 @@ langchain==0.2.6
 langchain-groq==0.1.4
 sentence-transformers==2.7.0
 pypdf==4.2.0
-faiss-cpu==1.7.2  # Try a lower version with pre-built wheels
+faiss-cpu==1.7.4
+tokenizers==0.13.3  # Try a lower version with pre-built wheels
 numpy==1.26.4
 scikit-learn>=1.0.0,<2.0.0
 torch==2.7.1
