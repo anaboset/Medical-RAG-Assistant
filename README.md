@@ -44,16 +44,16 @@ git clone https://github.com/anaboset/Medical-RAG-Assistant
 cd Medical-RAG-Assistant
 ```
 
-2. Create a Python Virtual Environment
+### 2. Create a Python Virtual Environment
 It’s highly recommended to use a virtual environment to manage project dependencies.
 bash# Create the virtual environment
 python3 -m venv venv
 
-# Activate it
-# On macOS/Linux:
+### Activate it
+ On macOS/Linux:
 source venv/bin/activate
 
-# On Windows:
+ On Windows:
 venv\Scripts\activate
 
 ### 3. Install Dependencies
