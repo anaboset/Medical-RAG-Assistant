@@ -1,6 +1,6 @@
 
 ```markdown
-# Medical RAG Assistant for EFDA Guidelines 💬
+# **Medical RAG Assistant for EFDA Guidelines 💬**
 This is an interactive Q&A application that allows you to query EFDA (Ethiopian Food and Drug Authority) medical guidelines for medicine registration, import, and export regulations. It uses a Retrieval-Augmented Generation (RAG) pipeline to retrieve relevant guideline snippets and provide accurate, context-aware answers based on preloaded or optionally uploaded PDF documents.
 
 ## Features
