@@ -8,12 +8,12 @@ langchain-core==0.2.35
 langchain-text-splitters==0.2.2
 
 # Vector DB
-faiss-cpu==1.7.4   # prebuilt wheel available for Streamlit Cloud
+faiss-cpu==1.7.4
 rank-bm25==0.2.2
 sentence-transformers==2.2.2
 
 # Tokenizer + embeddings
-transformers==4.41.2
+transformers==4.30.2
 tokenizers==0.13.3
 
 # LLM providers (Groq etc.)
