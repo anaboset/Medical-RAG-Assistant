@@ -1,22 +1,23 @@
+# **Medical RAG Assistant for EFDA Guidelines 💬**
 
-```markdown
-# Medical RAG Assistant for EFDA Guidelines 💬
-This is an interactive Q&A application that allows you to query EFDA (Ethiopian Food and Drug Authority) medical guidelines for medicine registration, import, and export regulations. It uses a Retrieval-Augmented Generation (RAG) pipeline to retrieve relevant guideline snippets and provide accurate, context-aware answers based on preloaded or optionally uploaded PDF documents.
+This is an interactive Q&A application that allows you to query **EFDA (Ethiopian Food and Drug Authority)** medical guidelines for medicine registration, import, and export regulations. It uses a **Retrieval-Augmented Generation (RAG)** pipeline to retrieve relevant guideline snippets and provide accurate, context-aware answers based on preloaded or optionally uploaded PDF documents.
 
-## Features
+## **Features**
+
 - **Interactive Q&A**: Ask questions about EFDA medical guidelines in natural language.
 - **Context-Aware Answers**: Understands the meaning and intent behind questions, not just keywords.
 - **Conversation Memory**: Maintains context across multiple questions within a session.
-- **Advanced Retrieval**: Uses hybrid search (FAISS + BM25) with a cross-encoder reranker for highly accurate context retrieval.
-- **Fast Generation**: Powered by the Groq API with Llama 3.3 70B for near-instant answers.
-- **Open-Source Embeddings**: Utilizes a local Hugging Face model (all-MiniLM-L6-v2) for text embeddings.
-- **Simple UI**: Built with Streamlit for a clean, user-friendly web interface.
+- **Advanced Retrieval**: Uses hybrid search (**FAISS + BM25**) with a cross-encoder reranker for highly accurate context retrieval.
+- **Fast Generation**: Powered by the **Groq API** with **Llama 3.3 70B** for near-instant answers.
+- **Open-Source Embeddings**: Utilizes a local **Hugging Face model (all-MiniLM-L6-v2)** for text embeddings.
+- **Simple UI**: Built with **Streamlit** for a clean, user-friendly web interface.
 - **Multiple Document Sets**: Switch between preloaded EFDA data or user-uploaded sets via chunk file selection.
 - **Summarization Mode**: Summarize retrieved medical documents with a single click.
 - **Incremental Updates**: Add new medical PDFs without reprocessing existing preloaded data (optional uploads).
 - **User Uploads**: Optionally upload your own medical PDFs to generate custom indexes.
 
-## Tech Stack
+## **Tech Stack**
+
 - **Framework**: LangChain
 - **UI**: Streamlit
 - **LLM**: Groq (Llama 3.3 70B Versatile)
@@ -25,15 +26,19 @@ This is an interactive Q&A application that allows you to query EFDA (Ethiopian 
 - **Reranker**: cross-encoder/ms-marco-MiniLM-L-6-v2
 - **Data Loader**: PyPDF2
 
-## Getting Started
-Follow these instructions to set up and run the project locally or deploy to Streamlit Cloud.
+## **Getting Started**
 
-### Prerequisites
+Follow these instructions to set up and run the project locally or deploy to **Streamlit Cloud**.
+
+### **Prerequisites**
+
 - **Python 3.8 or higher**
 - **Git**
 
-### 1. Clone the Repository
+### **1. Clone the Repository**
+
 Clone the project repository to your local machine.
+
 ```bash
 git clone https://github.com/anaboset/Medical-RAG-Assistant
 cd Medical-RAG-Assistant
@@ -41,18 +46,18 @@ cd Medical-RAG-Assistant
 
 ### 2. Create a Python Virtual Environment
 It’s highly recommended to use a virtual environment to manage project dependencies.
-```bash
-# Create the virtual environment
+bash# Create the virtual environment
 python3 -m venv venv
 
-# Activate it
-# On macOS/Linux:
+### Activate it
+ On macOS/Linux:
+```
 source venv/bin/activate
-
-# On Windows:
+```
+ On Windows:
+```
 venv\Scripts\activate
 ```
-
 ### 3. Install Dependencies
 The project’s dependencies are listed in `requirements.txt`.
 ```bash
