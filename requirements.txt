@@ -1,12 +1,26 @@
-streamlit==1.32.0
-langchain==0.2.6
-langchain-groq==0.1.4
-sentence-transformers==2.7.0
-pypdf==4.2.0
-faiss-cpu==1.7.4
-tokenizers==0.13.3  # Try a lower version with pre-built wheels
+# Core
+streamlit==1.36.0
+
+# LangChain & ecosystem
+langchain==0.2.14
+langchain-community==0.2.12
+langchain-core==0.2.35
+langchain-text-splitters==0.2.2
+
+# Vector DB
+faiss-cpu==1.7.4   # prebuilt wheel available for Streamlit Cloud
+rank-bm25==0.2.2
+sentence-transformers==2.2.2
+
+# Tokenizer + embeddings
+transformers==4.41.2
+tokenizers==0.13.3
+
+# LLM providers (Groq etc.)
+langchain-groq==0.1.6
+
+# Utilities
+tiktoken==0.7.0
 numpy==1.26.4
-scikit-learn>=1.0.0,<2.0.0
-torch==2.7.1
-transformers==4.42.4
-cython
+pandas==2.2.2
+scikit-learn==1.5.1
