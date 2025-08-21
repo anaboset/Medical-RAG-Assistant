@@ -6,6 +6,7 @@ langchain==0.2.14
 langchain-community==0.2.12
 langchain-core==0.2.35
 langchain-text-splitters==0.2.2
+langchain-huggingface
 
 # Vector DBs
 faiss-cpu==1.7.4
