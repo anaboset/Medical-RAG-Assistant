@@ -58,7 +58,7 @@ def get_bm25_retriever(chunks: List[Document], bm25_file: str = "chunks_bm25.pkl
 
 
 
-def get_vectorstore(faiss_dir: str = "./faiss_store", embeddings_model: str = "sentence-transformers/all-MiniLM-L6-v2") -> FAISS:
+def get_vectorstore(faiss_dir: str = "./chunks_faiss_store", embeddings_model: str = "sentence-transformers/all-MiniLM-L6-v2") -> FAISS:
     """
     Load an existing FAISS vectorstore from disk.
 
