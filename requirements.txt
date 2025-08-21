@@ -1,4 +1,4 @@
-# Core
+# UI
 streamlit==1.36.0
 
 # LangChain & ecosystem
@@ -7,19 +7,23 @@ langchain-community==0.2.12
 langchain-core==0.2.35
 langchain-text-splitters==0.2.2
 
-# Vector DB
+# Vector DBs
 faiss-cpu==1.7.4
 rank-bm25==0.2.2
-sentence-transformers==2.2.2
+chromadb==0.5.3   # optional, lightweight alternative to FAISS
 
-# Tokenizer + embeddings
-transformers==4.30.2
-tokenizers==0.13.3
+# Embeddings + models
+sentence-transformers==2.7.0   # updated, has wheels for Py3.11
+transformers==4.44.2           # updated to latest stable
+tokenizers==0.15.2             # compatible with Py3.11 wheels
 
-# LLM providers (Groq etc.)
+# LLM providers
 langchain-groq==0.1.6
 
 # Utilities
 numpy==1.26.4
 pandas==2.2.2
 scikit-learn==1.5.1
+
+# PDF loaders
+pypdf==4.3.1
